@@ -1,5 +1,5 @@
 import { Plugin } from "vite";
-import prefresh from "@prefresh/vite";
+//import prefresh from "@prefresh/vite";
 import { preactDevtoolsPlugin } from "./devtools";
 
 export interface PreactPluginOptions {
@@ -30,6 +30,6 @@ export default function preactPlugin({
 			},
 		},
 		preactDevtoolsPlugin({ injectInProd: devtoolsInProd }),
-		prefresh(),
+		//prefresh(),
 	];
 }
